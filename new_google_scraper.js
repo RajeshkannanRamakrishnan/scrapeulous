@@ -31,7 +31,7 @@
  * @param keyword: The keyword that is requested on Google
  * @param this.options: Holds all configuration data and options for the Google Scraper
  */
-class GoogleScraperNew {
+class GoogleScraperNew  extends BrowserWorker{
   async crawl(keyword) {
     this.logger.info('Running GoogleScraperNew');
     let search_type = this.options.search_type || 'direct';
